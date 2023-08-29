@@ -35,6 +35,16 @@
   <link href="assets/css/main.css" rel="stylesheet">
   
   <!-- Hover issue on mobile -->
+  <style>
+    @media (max-width: 768px) { /* Adjust the breakpoint as needed */
+      a.specific-link-class:hover {
+        /* Reset the styles to default */
+        color: inherit;
+        text-decoration: none;
+        /* Add any other default styles here */
+      }
+    }
+  </style>
 </head>
 
 <body class="index-page" data-bs-spy="scroll" data-bs-target="#navmenu">
@@ -402,13 +412,13 @@
     <div class="container copyright text-center mt-4">
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 		  <p>
-			<a href="https://forms.zohopublic.eu/computerscienceassignments/form/CSassign/formperma/_dVbIMMBXihsahoxrFpwbxipEixJWzGNCUCej_nFJlI" target="_blank">
+			<a href="https://forms.zohopublic.eu/computerscienceassignments/form/CSassign/formperma/_dVbIMMBXihsahoxrFpwbxipEixJWzGNCUCej_nFJlI" target="_blank" class="specific-link-class">
 			  <span class="material-icons" style="font-size: 65px;margin-right: 10px;">assignment</span>
 			</a>
-			<a href="javascript:void(0);" onclick="composeEmailInfo();">
+			<a href="javascript:void(0);" onclick="composeEmailInfo();" class="specific-link-class">
 			  <span class="material-icons" style="font-size: 65px;margin-right: 10px;margin-left: 10px;">email</span>
 			</a>
-			<a href="https://www.facebook.com/CSassign" target="_blank">
+			<a href="https://www.facebook.com/CSassign" target="_blank" class="specific-link-class">
 			  <span class="material-icons" style="font-size: 65px;margin-left: 10px;">facebook</span>
 			</a>
 		  </p>
