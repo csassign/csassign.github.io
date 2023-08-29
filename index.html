@@ -36,9 +36,12 @@
   
   <!-- Hover issue on mobile -->
   <style>
-  @media (hover: hover) and (pointer: fine) {
-    a:hover { color: red; }
-  }
+	@media(hover) {
+	  .detection:before {
+		content: 'YES';
+		color: green;
+	  }
+	}
   </style>
 </head>
 
